@@ -1,0 +1,9 @@
+﻿@page "/optional-path-parameter/{Param1:bool?}"
+
+<h3>OptionalPathParameter</h3>
+<div>Param1 has value? - @Param1.HasValue</div>
+
+@code {
+    [Parameter]
+    public bool? Param1 { get; set; }
+}

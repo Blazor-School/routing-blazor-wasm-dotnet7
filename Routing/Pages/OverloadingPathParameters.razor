@@ -1,0 +1,8 @@
+﻿@page "/path-parameters-overloading/{Param1}"
+
+<h3>Overloading path with param: @Param1</h3>
+
+@code {
+    [Parameter]
+    public string Param1 { get; set; } = "";
+}

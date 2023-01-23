@@ -1,0 +1,10 @@
+﻿@page "/mapping-query-parameter"
+
+<h3>MappingQueryParameters</h3>
+<div>ParameterInComponent: @ParameterInComponent @ParameterInComponent.GetType()</div>
+
+@code {
+    [SupplyParameterFromQuery(Name = "ParameterFromUrl")]
+    [Parameter]
+    public string ParameterInComponent { get; set; } = "";
+}
